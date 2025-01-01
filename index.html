@@ -78,58 +78,77 @@
       color: #838282;
       text-align: center;
     }
+    .slide-container {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+    .slide {
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
-  <img src="banner.png" alt="Banner" style="width: 100%; height: auto; margin-bottom: 20px;">
-
-  <div class="container">
-    <h1>🌿 Lístky radosti </h1>
-
-    <h2>💚 Co vás čeká?</h2>
-    <p>
-      V novém e-shopu se můžete
-      těšit na více produktů,
-      přehlednější prostředí a ještě
-      větší důraz na udržitelnost a
-      ekologii. Inspirujeme se přírodou
-      a chceme, aby naše produkty
-      byly šetrnější k planetě i k vám.
-    </p>
-    <h2>📱 Sledujte nás na nových profilech!</h2>
-    <p>
-      <ul>
-        <li> <i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/listkyradosti">@listkyradosti</a> </li>
-        <li> <i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/people/L%C3%ADstky-radosti/61570093402074/">Lístky radosti</a> </li>
-      </ul>
-    </p>
-
-    <h2><i class="fa fa-address-book"> Kontakty </i> </h2>
-    <ul>
-      <li>
-        <span class="mail">
-          <i class="fas fa-envelope"></i>
-          Mail:
-          <a href="mailto:info@kvitkovokne.cz">
-            info
-            <!---->
-            @
-            <!---->
-            kvitkovokne.cz
-          </a>
-        </span>
-      </li>
-      <li>
-        <span class="tel">
-          <i class="fas fa-phone"></i>
-          Tel:
-          <a href="tel:+420725666128">+420725666128</a>
-        </span>
-      </li>
-    </ul>
-
-    <div class="footer">
-      &copy; 2025 Lístky radosti
+  <div class="slide-container">
+    <div class="slide">
+      <img src="banner.png" alt="Banner">
+    </div>
+    <div class="slide">
+      <div class="container">
+        <h1>🌿 Lístky radosti </h1>
+        <h2>💚 Co vás čeká?</h2>
+        <p>
+          V novém e-shopu se můžete
+          těšit na více produktů,
+          přehlednější prostředí a ještě
+          větší důraz na udržitelnost a
+          ekologii. Inspirujeme se přírodou
+          a chceme, aby naše produkty
+          byly šetrnější k planetě i k vám.
+        </p>
+        <h2>📱 Sledujte nás na nových profilech!</h2>
+        <p>
+          <ul>
+            <li> <i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/listkyradosti">@listkyradosti</a> </li>
+            <li> <i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/people/L%C3%ADstky-radosti/61570093402074/">Lístky radosti</a> </li>
+          </ul>
+        </p>
+        <h2><i class="fa fa-address-book"> Kontakty </i> </h2>
+        <ul>
+          <li>
+            <span class="mail">
+              <i class="fas fa-envelope"></i>
+              Mail:
+              <a href="mailto:info@kvitkovokne.cz">
+                info
+                <!---->
+                @
+                <!---->
+                kvitkovokne.cz
+              </a>
+            </span>
+          </li>
+          <li>
+            <span class="tel">
+              <i class="fas fa-phone"></i>
+              Tel:
+              <a href="tel:+420725666128">+420725666128</a>
+            </span>
+          </li>
+        </ul>
+        <div class="footer">
+          &copy; 2025 Lístky radosti
+        </div>
+      </div>
     </div>
   </div>
 </body>
