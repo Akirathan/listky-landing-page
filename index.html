@@ -95,9 +95,23 @@
       width: 100%;
       height: auto;
     }
+    .animated-title {
+      font-size: 5em;
+      position: sticky;
+      color: #333;
+      text-align: center;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeInTitle 1.7s forwards;
+    }
+    @keyframes fadeInTitle {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
   </style>
 </head>
 <body>
+  <div class="animated-title">🌿 Lístky radosti</div>
   <div class="slide-container">
     <div class="slide">
       <img src="banner.png" alt="Banner">
