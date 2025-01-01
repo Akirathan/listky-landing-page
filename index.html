@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kvítko v okně se přesouvá</title>
+  <!-- Include Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 17px;
+      text-align: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .container {
+      width: 90%;
+      max-width: 800px;
+      background-color: #fff;
+      padding: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    a {
+      color: #4a76a1;
+      text-decoration: underline;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #333;
+    }
+    .subtitle {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #8a8989;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    h2, h3 {
+      margin-top: 50px;
+      color: #333;
+    }
+    p {
+      color: #666;
+      font-size: 1.2em;
+      line-height: 1.6;
+      padding: 10px 0;
+    }
+    ul {
+      font-family: inherit;
+      list-style-type: none;
+    }
+    li {
+      font-family: inherit;
+      font-size: inherit;
+      padding-bottom: 7px;
+      padding-left: 30px;
+    }
+    li:hover {
+      transform: scale(1.1);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      color: #838282;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="banner.png" alt="Banner" style="width: 100%; height: auto; margin-bottom: 20px;">
+    <h1>🌿 Lístky radosti </h1>
+
+    <h2>💚 Co vás čeká?</h2>
+    <p>
+      V novém e-shopu se můžete
+      těšit na více produktů,
+      přehlednější prostředí a ještě
+      větší důraz na udržitelnost a
+      ekologii. Inspirujeme se přírodou
+      a chceme, aby naše produkty
+      byly šetrnější k planetě i k vám.
+    </p>
+    <h2>📱 Sledujte nás na nových profilech!</h2>
+    <p>
+      <ul>
+        <li> <i class="fab fa-instagram"></i> Instagram: <a href="https://www.instagram.com/listkyradosti">@listkyradosti</a> </li>
+        <li> <i class="fab fa-facebook"></i> Facebook: <a href="https://www.facebook.com/people/L%C3%ADstky-radosti/61570093402074/">Lístky radosti</a> </li>
+      </ul>
+    </p>
+
+    <h2><i class="fa fa-address-book"> Kontakty </i> </h2>
+    <ul>
+      <li>
+        <span class="mail">
+          <i class="fas fa-envelope"></i>
+          Mail:
+          <a href="mailto:info@kvitkovokne.cz">
+            info
+            <!---->
+            @
+            <!---->
+            kvitkovokne.cz
+          </a>
+        </span>
+      </li>
+      <li>
+        <span class="tel">
+          <i class="fas fa-phone"></i>
+          Tel:
+          <a href="tel:+420725666128">+420725666128</a>
+        </span>
+      </li>
+    </ul>
+
+    <div class="footer">
+      &copy; 2025 Lístky radosti
+    </div>
+  </div>
+</body>
+</html>
